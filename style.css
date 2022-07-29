@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+:root{
+    --dark: #000000;
+    --light:#515151;
+}
+
+/* <----------------Navbar section-----------> */
+
+/* logo */
+.navbar-container>div>img{
+    width: 100px;
+    margin: 0px 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top : 40px;
+}
+
+.list {
+    display: flex;
+    width: 40vw;
+}
+
+.list-item{ 
+    padding: 0px 10px;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Orbitron";
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+/* under line on list item at navbar  */
+.list-item::after{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2px;
+    bottom: -2px;
+    left:0px;
+    margin: 0px auto;
+    background-color: var(--dark);
+    visibility: hidden;
+}
+
+.list-item:hover::after{
+    visibility: visible;
+}
+.list-item:hover{
+    font-weight: 800;
+}
+
+/* Search bar and button */
+.button-group {
+    width: 14vw;
+    height: 5vh;
+    position: relative;
+}
+
+/* search bar svg icon  */
+.search-icon svg{
+    width: 30px;
+    height: 30px;
+    top:3px;
+    left: 0;
+    position: absolute;
+}
+
+.nav-button {
+    font-size: 21px;
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    padding: 5px 44px;
+    color: var(--light);
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    right: 6px;
+}
+
+/* <-----------------Hero section ---------------------> */
+.hero-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    /* position: relative; */
+}
+
+/* Hero img  */
+.globe+div img {
+    width: 27vw;
+}
+
+ /* hero main img  */
+.globe+div {
+
+    height: fit-content;
+    position: relative;
+    top: 55px;
+    left: -75px;
+}
+
+/* square pattern */
+.square img {
+    position: absolute;
+    top: 53%;
+    left: 18%;
+    width: 304px;
+    /* z-index: -2; */
+}
+
+.star {
+    position: absolute;
+    top: 21%;
+    left: 88%;
+}
+
+.star img {
+    width: 75%;
+}
+
+.globe {
+    position: absolute;
+    top: 16%;
+    left: 55%;
+
+}
+
+.globe img {
+    width: 75%;
+}
+
+/* right content hero-container-right */
+.hero-heading {
+    font-size: 3.5rem;
+    margin-top: 150px;
+    font-family: "Orbitron";
+    text-align: center;
+}
+
+.hero-description {
+    text-align: center;
+    width: 43vw;
+    margin: 39px 0px;
+    font-family: sans-serif;
+    padding: 0px 20px;
+    line-height: 1.4;
+    color: var(--light);
+}
+
+.hero-description+div {
+    text-align: center;
+    margin: 95px 0px;
+}
+
+/*  both buttons bottom  */
+.button-email,
+.button-join {
+    margin: 5px;
+    border: 2px solid var(--light);
+    padding: 1px 25px;
+    font-family: 'Orbitron';
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+/* join button */
+.button-join {
+    background-color: black;
+    color: white;
+    padding: 1px 5px;
+}
+
+/* contact section  */
+.contact-heading {
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--light);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    width: 35px;
+    margin: 10px;
+}
+
+/* for adding a extra star without adding in html  */
+/* i use only css for that  */
+
+.hero-container::before{
+    content: url(./assets/start.png);
+    position: absolute;
+    bottom: 70px;
+    left: 635px;
+    transform:scale(.7);   
+}
