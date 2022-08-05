@@ -17,7 +17,8 @@ Screenshot
 
 - Learned to use CSS position (Absolute & Relative) property.
 - Learned to create underline on navbar link using ::after pseudo element.
-- learned about the z-index property to specifies the stack order of an element.
+- Learned about the z-index property to specifies the stack order of an element.
+- Learned to ADD img elements (extra star) without touching html, I have used only css for that.
 
 ## Time taken to finish this project ⏳
 - 4.30 hours
