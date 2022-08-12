@@ -1,5 +1,5 @@
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-orange)
-![Live Project](https://img.shields.io/badge/Live--Project-4-green)
+![Live Project](https://img.shields.io/badge/Live--Project-1-green)
 
 ![author](https://img.shields.io/badge/By-Arpit--Pathak-blue)
 
